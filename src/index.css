@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Poppins:wght@400@500&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background: #fafafa
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100svh;
+  width: 100vw
+}
+
+
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #050505;
+  transition-timing-function: ease-in-out;
+}
+
+.form {
+  width: 66.6vw;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.form > div {
+  display: flex;
+  flex-direction: column;
+  width: 100%
+}
+
+.formOne,
+.formTwo,
+.formThree {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #050505;
+  opacity: 50%;
+  margin-bottom: 40px;
+  width: 100%;
+  font-size: 10px;
+  line-height: 16px;
+  transition-timing-function: ease-in-out;
+  /* transform: translateY(16px) !important; */
+}
+
+/* .formOne {
+  animation-delay: 0ms !important;
+  animation: formIn 1500ms forwards;
+}
+
+.formTwo {
+  animation-delay: 3000ms !important;
+  animation: formIn 1500ms forwards;
+}
+
+.formThree {
+  animation-delay: 6000ms !important;
+  animation: formIn 1500ms forwards;
+} */
+
+
+
+.formOne > label,
+.formTwo > label,
+.formThree > label {
+  margin-bottom: 4px !important;
+  cursor: pointer
+}
+
+
+.formOne > input,
+.formTwo > input,
+.formThree > textarea {
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+  color: #050505;
+  /* opacity: 50%; */
+  font-size: 20px;
+  font-weight: 32px;
+  background: none;
+  overflow-wrap: break-word;
+  height: fit-content !important;
+  overflow-y: visible !important;
+  resize: none;
+}
+
+.formThree > textarea {
+  /* height: auto !important; */
+  height: 160px !important;
+  font-family: "Poppins", sans-serif;
+  word-wrap: break-word;
+  word-break: break-all;
+  font-weight: 500;
+}
+
+.formThree > textarea::-webkit-scrollbar {
+  width: 2px;
+  /* transform: translateX(8px) !important; */
+}
+
+.formThree > textarea::-webkit-scrollbar-thumb {
+  background-color: #808080;
+  border-radius: 4px;
+  width: 4px !important;
+  padding-left: 4px;
+}
+
+.formOne > label,
+.formTwo > label,
+.formThree > label {
+  padding: 0;
+  margin: 0;
+  transform: translateY(0px);
+  animation: formIn 3000ms forwards;
+}
+
+.active {
+  animation: label 1500ms forwards;
+  transition-timing-function: ease-in-out;
+}
+
+.inActive {
+  animation: labelOut 1500ms forwards;
+  transition-timing-function: ease-in-out;
+}
+
+.inpActive {
+  animation: input 1500ms forwards;
+  transition-timing-function: ease-in-out;
+}
+
+.submit{
+  align-self: flex-end;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  line-height: 24px;
+  color: #050505;
+  opacity: 0;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  animation: button 1500ms;
+  animation-fill-mode: forwards;
+  animation-delay: 1500ms;
+  transition-timing-function: ease-in-out;
+
+}
+
+@keyframes button {
+  0% {
+    transform: translateX(-8px);
+  }
+  100% {
+    opacity: 0.5
+  }
+}
+
+@keyframes formIn {
+  0% {
+    opacity: 0;
+    transform: translateY(8px) !important;
+  }
+  100% {
+    opacity: 0.5 !important;
+    transform: translateY(0px) !important;
+  }
+}
+
+@keyframes label {
+  0% {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+  100% {
+    transform: translateY(-24px);
+    line-height: 16px;
+    font-size: 10px;
+    margin-bottom: 24px;
+  }
+}
+
+@keyframes labelOut {
+  0% {
+    transform: translateY(-24px);
+    margin-bottom: 48px
+  }
+  100% {
+    transform: translateY(0px);
+    line-height: 24px;
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+}
+
+@keyframes input {
+  0% {
+    height: 0px !important
+  }
+  100% {
+    height: 32px
+  }
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+  }
+  12.5% {
+    opacity: 0
+  }
+  62.5% {
+    opacity: 1
+  }
+  87.5% {
+    opacity: 0
+  }
+  100% {
+    opacity: 0
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
