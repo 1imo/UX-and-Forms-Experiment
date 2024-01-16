@@ -46,6 +46,23 @@ function App() {
     setPosition(8)
   }
 
+  useEffect(() => {
+    if(nc) {
+      name.current.focus()
+    }
+  }, [nc])
+
+  useEffect(() => {
+    if(e) {
+      email.current.focus()
+    }
+  }, [e])
+
+  useEffect(() => {
+    if(vi) {
+      vision.current.focus()
+    }
+  }, [vi])
 
   useEffect(() => {
     const animationTimeout = setTimeout(() => {
@@ -54,7 +71,7 @@ function App() {
         setPosition(position + 1)
         
       }
-    }, 10500)
+    }, 9000)
 
     return () => clearTimeout(animationTimeout)
   }, [position])

@@ -5,7 +5,8 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  background: #fafafa
+  background: #fafafa;
+  width: 100vw !important;
 }
 
 #root {
@@ -13,7 +14,10 @@ body {
   align-items: center;
   justify-content: center;
   height: 100svh;
-  width: 100vw
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 
@@ -27,10 +31,12 @@ body {
 .seven,
 .eight {
   font-weight: 500;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 15px;
+  line-height: 24px;
   color: #050505;
   transition-timing-function: ease-in-out;
+  padding: 0 40px;
+  text-align: center;
 }
 
 .form {
@@ -113,10 +119,10 @@ body {
 .formThree > textarea {
   /* height: auto !important; */
   height: 160px !important;
-  font-family: "Poppins", sans-serif;
+  /* font-family: 'Poppins', sans-seri; */
   word-wrap: break-word;
   word-break: break-all;
-  font-weight: 500;
+  font-weight: 500 !important;
 }
 
 .formThree > textarea::-webkit-scrollbar {
